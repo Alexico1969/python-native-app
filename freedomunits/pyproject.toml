@@ -1,0 +1,52 @@
+[tool.briefcase]
+project_name = "Freedom Units"
+bundle = "nl.alexicoo"
+version = "0.0.1"
+url = "https://alexicoo.nl/freedomunits"
+license = "BSD license"
+author = 'Alex van Winkel'
+author_email = "alexicoo@gmail.com"
+
+[tool.briefcase.app.freedomunits]
+formal_name = "Freedom Units"
+description = "Fahrenheit to Celcius converter"
+icon = "src/freedomunits/resources/freedomunits"
+sources = ['src/freedomunits']
+requires = [
+]
+
+
+[tool.briefcase.app.freedomunits.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev34',
+    'std-nslog~=1.0.0'
+]
+
+[tool.briefcase.app.freedomunits.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev34',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.freedomunits.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev34',
+]
+
+# Mobile deployments
+[tool.briefcase.app.freedomunits.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev34',
+    'std-nslog~=1.0.0'
+]
+
+[tool.briefcase.app.freedomunits.android]
+requires = [
+    'toga-android>=0.3.0.dev34'
+]

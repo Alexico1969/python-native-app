@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.8
+Name: freedomunits
+Formal-Name: Freedom Units
+App-ID: nl.alexicoo.freedomunits
+Version: 0.0.1
+Home-page: https://alexicoo.nl/freedomunits
+Author: Alex van Winkel
+Author-email: alexicoo@gmail.com
+Summary: Fahrenheit to Celcius converter
